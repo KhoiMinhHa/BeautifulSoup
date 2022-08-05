@@ -17,7 +17,14 @@ def main():
     # Write a code here to get job location and role from user e.g. role = input()
     print("Enter role you want to search")
     role = input()
+    print("Enter the location you want to searching for")
+    location = input()
     # Complete the missing part of this function here
+    print('\n')
+    print(role)
+    print(location)
+    getJobList(role, location)
+    saveDataInJSON(getJobList(role, location))
     
 if __name__ == '__main__':
     main()
